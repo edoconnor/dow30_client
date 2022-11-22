@@ -1,0 +1,21 @@
+[debug] [2022-11-22T15:41:20.075Z] ----------------------------------------------------------------------
+[debug] [2022-11-22T15:41:20.077Z] Command:       /usr/local/bin/firebase /home/ed/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2022-11-22T15:41:20.077Z] CLI Version:   11.1.0
+[debug] [2022-11-22T15:41:20.077Z] Platform:      linux
+[debug] [2022-11-22T15:41:20.077Z] Node Version:  v16.15.0
+[debug] [2022-11-22T15:41:20.077Z] Time:          Tue Nov 22 2022 10:41:20 GMT-0500 (Eastern Standard Time)
+[debug] [2022-11-22T15:41:20.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-22T15:41:20.082Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-22T15:41:20.082Z] > authorizing via signed-in user (ed@oconnor.app)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/ed/dow30_client
+

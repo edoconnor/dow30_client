@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { TableComponent } from './table/table.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'dow', pathMatch: 'full' },
-  { path: 'dow', component: TableComponent },
+  { path: '', redirectTo: 'table', pathMatch: 'full' },
+  { path: 'table', component: TableComponent },
 ];
 
 @NgModule({

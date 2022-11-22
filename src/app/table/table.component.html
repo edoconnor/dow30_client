@@ -1,33 +1,22 @@
-<div class="container">
-  <table
-    mat-table
-    [dataSource]="dataSource"
-    class="mat-elevation-z8 demo-table"
-  >
-    <!-- Position Column -->
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef>name</th>
-      <td mat-cell *matCellDef="let dow">{{ dow.name }}</td>
-    </ng-container>
-
-    <!-- Name Column -->
-    <ng-container matColumnDef="symbol">
-      <th mat-header-cell *matHeaderCellDef>symbol</th>
-      <td mat-cell *matCellDef="let dow">{{ dow.symbol }}</td>
-    </ng-container>
-
-    <!-- Weight Column -->
-    <ng-container matColumnDef="ebitda">
-      <th mat-header-cell *matHeaderCellDef>ebitda</th>
-      <td mat-cell *matCellDef="let dow">{{ dow.ebitda }}</td>
-    </ng-container>
-
-    <!-- Symbol Column -->
-    <ng-container matColumnDef="mktcap">
-      <th mat-header-cell *matHeaderCellDef>mktcap</th>
-      <td mat-cell *matCellDef="let dow">{{ dow.mktcap }}</td>
-    </ng-container>
-
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<div class="container-fluid">
+  <table class="table table-striped mx-auto">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th class="col-center" scope="col">sym</th>
+        <th class="col-center" scope="col">ebitda</th>
+        <th class="col-center" scope="col">mktcap</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of datas$ | async; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ data.name }}</td>
+        <td class="col-center">{{ data.symbol }}</td>
+        <td class="col-center">${{ data.ebitda | number }}</td>
+        <td class="col-center">${{ data.mktcap | number }}</td>
+      </tr>
+    </tbody>
   </table>
 </div>

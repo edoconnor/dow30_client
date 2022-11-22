@@ -1,4 +1,4 @@
-export interface Dow {
+export interface Data {
   _id?: string;
   name?: string;
   symbol?: string;
