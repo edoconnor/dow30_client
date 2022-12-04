@@ -1,6 +1,11 @@
 .table {
-  width: 80%;
+  width: 100%;
 }
 .col-center {
   text-align: center;
+}
+@media (max-width: 40em) {
+  .table {
+    font-size: 0.75rem;
+  }
 }
