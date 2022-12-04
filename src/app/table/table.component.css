@@ -4,8 +4,10 @@
 .col-center {
   text-align: center;
 }
-@media (max-width: 30em) {
-  .table {
+@media (max-width: 38em) {
+  td,
+  th {
     font-size: 0.75rem;
+    color: blueviolet;
   }
 }
